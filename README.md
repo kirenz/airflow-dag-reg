@@ -1,6 +1,17 @@
-# README
+# Airflow pipeline example 
 
-Replace `home` with your home directory:
+In this tutorial we will use Airflow to implement a simple regression pipeline. Note that this is just meant as a demonstration of how to set up a simple pipeline and is not an example of a realistic machine learning pipeline in production.
 
-- Save `reg_dag_happy.py` in home/airflow/dags
-- Save all other scripts in home/airflow/dags/dag_reg_example 
+The simple pipeline will include three tasks:
+
+1) data preprocessing using pandas (task output: csv-file), 
+2) model building with scikit-learn (task output: trained model object)
+3) model prediction (task output: csv-file with prediction)
+
+
+- First you need to install Airflow: [Installation tutorial](https://kirenz.github.io/codelabs/codelabs/airflow-setup/#0) 
+
+- Copy the content of this repo on your machine.
+- Save `reg_dag_happy.py` in your home folder `~/airflow/dags`
+- Create a new folder in `dags`. Call it `dag_reg_example`
+- Save all other scripts in `~/airflow/dags/dag_reg_example` 
