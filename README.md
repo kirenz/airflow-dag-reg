@@ -15,3 +15,5 @@ The simple pipeline will include three tasks:
 - Save `reg_dag_happy.py` in your home folder `~/airflow/dags`
 - Create a new folder in `dags`. Call it `dag_reg_example`
 - Save all other scripts in `~/airflow/dags/dag_reg_example` 
+
+Now follow the steps explained in this [installation tutorial](https://kirenz.github.io/codelabs/codelabs/airflow-setup/#0)  starting from step 7 "First pipeline". Just replace the names of the taks and files.
